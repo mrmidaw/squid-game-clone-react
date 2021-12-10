@@ -5,10 +5,10 @@ import { SocialMedia } from "./SocialMedia";
 
 export const Layout = ({ children }) => {
     return (
-        <div className="p-12 relative bg-color bg-no-repeat"
+        <div className="p-12 relative bg-cover bg-no-repeat"
             style={{
                 backgroundImage: `url(${BgImage})`,
-                backgroundPositionX: -200,
+                // backgroundPositionX: -30,
             }}
         >
             < div className="gradient" />
