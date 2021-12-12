@@ -2,6 +2,7 @@ import React from "react";
 import BgImage from '../../assets/images/bg-squid-game.jpeg';
 import { Header } from './header/Header';
 import { SocialMedia } from "./SocialMedia";
+import { Modal } from "../screens/home/Modal";
 
 export const Layout = ({ children }) => {
     return (
@@ -15,6 +16,7 @@ export const Layout = ({ children }) => {
             <div className="relative z-1">
                 <Header />
                 <SocialMedia />
+                <Modal/>
                 {children}
             </div>
         </div >

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import Controls from './Controls';
-import VideosLine from './videosLine/VideosLine';
+import { Controls } from './Controls';
+import { VideosLine } from './videosLine/VideosLine';
 
 import t1Img from '../../../../assets/images/thumbnails/thumbnail-1.jpg';
 import t2Img from '../../../../assets/images/thumbnails/thumbnail-2.jpeg';
 import t3Img from '../../../../assets/images/thumbnails/thumbnail-3.jpeg';
 import t4Img from '../../../../assets/images/thumbnails/thumbnail-4.jpeg';
 import t5Img from '../../../../assets/images/thumbnails/thumbnail-5.jpeg';
-
 
 const initialSlides = [
     {
@@ -35,14 +34,11 @@ const initialSlides = [
         thumbnailPath: t5Img,
         videoUrl: 'https://www.youtube.com/watch?v=lJ-74glXQ4I',
     },
-]
-
+];
 
 export const Carousel = () => {
     const [slides] = useState(initialSlides);
     const [currentIdx, setCurrentIdx] = useState(0);
-
-
 
     return (
         <div className='mt-24'>
@@ -50,9 +46,9 @@ export const Carousel = () => {
                 <div className='text-white opacity-90 text-lg font-medium mr-20'>
                     1 series
                 </div>
-                <Controls slidesLength={slides.length} />
+                <Controls slidesLength={slides.length} setCurrentIdx={setCurrentIdx} currentIdx={currentIdx} />
             </div>
-            <VideosLine slides={slides} />
+            <VideosLine slides={slides} setCurrentIdx={setCurrentIdx} currentIdx={currentIdx} />
         </div>
     );
 };
