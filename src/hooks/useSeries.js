@@ -20,6 +20,6 @@ export const useSeries = () => {
 			),
 		[]
 	)
-	console.log(series);
+
 	return [series, setSeries]
 };
