@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { onSnapshot, collection, query, orderBy } from 'firebase/firestore'
-import { db } from '../firebase'
+import { useEffect, useState } from 'react';
+import { onSnapshot, collection, query, orderBy } from 'firebase/firestore';
+import { db } from '../firebase';
 
 export const useSeries = () => {
 	const [series, setSeries] = useState([])
@@ -20,6 +20,6 @@ export const useSeries = () => {
 			),
 		[]
 	)
-
+	console.log(series);
 	return [series, setSeries]
-}
+};

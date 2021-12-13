@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Controls } from './Controls';
 import { VideosLine } from './videosLine/VideosLine';
+import { useSeries } from '../../../../hooks/useSeries';
 
 import t1Img from '../../../../assets/images/thumbnails/thumbnail-1.jpg';
 import t2Img from '../../../../assets/images/thumbnails/thumbnail-2.jpeg';
@@ -37,7 +38,8 @@ const initialSlides = [
 ];
 
 export const Carousel = () => {
-    const [slides] = useState(initialSlides);
+    // const [slides] = useState(initialSlides);
+    const [slides] = useSeries();
     const [currentIdx, setCurrentIdx] = useState(0);
 
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {VideoItem} from './VideoItem';
+import { VideoItem } from './VideoItem';
 import { useModal } from '../../../../ModalProvider';
 
 export const VideosLine = ({ slides, currentIdx, setCurrentIdx }) => {
@@ -20,7 +20,6 @@ export const VideosLine = ({ slides, currentIdx, setCurrentIdx }) => {
 		>
 			{slides.map((slide, idx) => {
 				const isActive = currentIdx === idx
-
 				return (
 					<VideoItem
 						key={slide._id}

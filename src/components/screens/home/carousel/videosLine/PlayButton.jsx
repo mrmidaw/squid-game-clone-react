@@ -1,5 +1,5 @@
-import React from 'react'
-import { IoPlay } from 'react-icons/io5'
+import React from 'react';
+import { IoPlay } from 'react-icons/io5';
 
 export const PlayButton = () => {
     return (

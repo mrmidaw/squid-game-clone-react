@@ -8,15 +8,14 @@ export const Layout = ({ children }) => {
     return (
         <div className="p-12 relative bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url(${BgImage})`,
-                // backgroundPositionX: -30,
+                backgroundImage: `url(${BgImage})`
             }}
         >
             < div className="gradient" />
             <div className="relative z-1">
                 <Header />
                 <SocialMedia />
-                <Modal/>
+                <Modal />
                 {children}
             </div>
         </div >

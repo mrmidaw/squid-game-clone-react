@@ -19,7 +19,7 @@ export const VideoItem = ({ slide, clickHandler, isActive }) => {
 
 VideoItem.propTypes = {
     clickHandler: PropTypes.func.isRequired,
-    isActive: PropTypes.number.isRequired,
+    isActive: PropTypes.bool.isRequired,
     slide: PropTypes.shape({
         _id: PropTypes.string.isRequired,
         thumbnailPath: PropTypes.string.isRequired,
