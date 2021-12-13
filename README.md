@@ -1,6 +1,6 @@
 ### Squid Game Clone 
 
-#### Finished product - 
+#### Finished product - https://mrmidaw.github.io/squid-game-clone-react/
 
 ##### Technologies used: 
     1. React
