@@ -9,7 +9,7 @@ export const Content = () => {
             <div className="flex ml-5">
                 <img draggable={false} alt="" src={objectsLogog} className="mr-8 h-auto block" style={{ maxWidth: 50 }} />
                 <p className="text-white opacity-70 leading-8 text-lg" style={{ maxWidth: '60%' }}>
-                    “I Dont Have A Home To Go Back To. In Here, I Stand A Chance At Least. But Out There? I Got Nothing Out There.” – Player 322
+                    “I dont have a home to go back to. In here, i stand a chance at least. But out there? I got nothing out there.” – Player 322
                 </p>
             </div>
         </div>
