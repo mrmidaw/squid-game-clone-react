@@ -21,7 +21,7 @@ export const Controls = ({ slidesLength, setCurrentIdx, currentIdx }) => {
     };
 
     return (
-        <div>
+        <div >
             <div className='text-white'>
                 <button
                     onClick={prevHandler}

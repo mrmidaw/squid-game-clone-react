@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoPlay } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
 export const PlayButton = () => {
     return (
@@ -17,9 +18,13 @@ export const PlayButton = () => {
                 className='circle-effect absolute top-12 z-2 opacity-40'
                 style={{ right: '4.7rem' }}
             />
-            <div className='circle-effect z-3'>
+            <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className='circle-effect z-3'
+            >
                 <IoPlay size={20} color='white' />
-            </div>
+            </motion.div>
         </div>
     );
 };

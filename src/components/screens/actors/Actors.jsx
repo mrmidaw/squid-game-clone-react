@@ -2,12 +2,7 @@ import React from "react";
 import { Layout } from "../../layout/Layout";
 import { motion } from "framer-motion";
 
-export const Actors = () => {
-
-    const variants = {
-        visible: { opacity: 1 },
-        hidden: { opacity: 0 },
-    }
+export const Actors = () => {   
 
     const actorsArr = [
         {
