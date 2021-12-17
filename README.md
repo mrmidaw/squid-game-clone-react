@@ -1,6 +1,5 @@
 ### Squid Game Clone 
 
-#### Finished product -
 
 ##### Technologies used: 
     1. React
